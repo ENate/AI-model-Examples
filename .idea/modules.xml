@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../penelytica_django/.idea/penelytica_django.iml" filepath="$PROJECT_DIR$/../penelytica_django/.idea/penelytica_django.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python-mathematical-modelling-examples.iml" filepath="$PROJECT_DIR$/.idea/python-mathematical-modelling-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../real_estate/.idea/real_estate.iml" filepath="$PROJECT_DIR$/../real_estate/.idea/real_estate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tf2-feature-selection-codes/.idea/tf2-feature-selection-codes.iml" filepath="$PROJECT_DIR$/../tf2-feature-selection-codes/.idea/tf2-feature-selection-codes.iml" />
       <module fileurl="file://$PROJECT_DIR$/../tf2_feature_selection/.idea/tf2_feature_selection.iml" filepath="$PROJECT_DIR$/../tf2_feature_selection/.idea/tf2_feature_selection.iml" />
     </modules>
   </component>
