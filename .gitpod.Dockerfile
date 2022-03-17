@@ -1,17 +1,24 @@
 FROM gitpod/workspace-full
 
-# RUN apt update && apt install --no-install-recommends -y build-essential gcc curl      ca-certificates python3 
-# && \
-# apt clean && rm -rf /var/lib/apt/lists/*
-# system clean up
-RUN pip install -r requirements.txt
+# Install conda
+RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
+    /bin/bash ~/miniconda.sh -b -p /opt/conda && \
+    rm ~/miniconda.sh && \
+    ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
+    echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
+    echo "conda activate base" >> ~/.bashrc
+    
+RUN chown -R gitpod:gitpod /opt/conda \
+    && chmod -R 777 /opt/conda \
+    && chown -R gitpod:gitpod /home/gitpod/.conda \
+    && chmod -R 777 /home/gitpod/.conda
 
-# RUN wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
-# RUN sudo apt install ./dive_0.9.2_linux_amd64.deb
 
+#RUN chown -R gitpod:gitpod /home/gitpod/.cache \
+#    && chmod -R 777 /home/gitpod/.cache
 
-# install tensorflow
-# RUN pip install tensorflow
-# RUN apt-get install protobuf-compiler python-pil python-lxml
-# FROM python:3.8-slim
+#Install Python Packages
+# COPY requirements.txt /tmp/
+# #RUN  pip3 install --requirement /tmp/requirements.txt
+# RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 pip3 install
 RUN pip install --no-cache-dir matplotlib pandas jupyter
