@@ -5,13 +5,13 @@ COPY requirements.txt /tmp/
 RUN  pip3 install --requirement /tmp/requirements.txt
 RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 pip3 install
 
-RUN mkdir -p /supervised/notebooks
+# RUN mkdir -p /supervised/notebooks/research
 
 RUN git clone https://github.com/tensorflow/models.git /supervised/notebooks
 
 
 #add jupyter
-WORKDIR /supervised/notebooks
+WORKDIR /supervised/notebooks/
 # few inits
 RUN RUN pip install --upgrade pip
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
