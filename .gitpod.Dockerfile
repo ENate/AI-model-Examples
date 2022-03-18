@@ -11,7 +11,7 @@ RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 
 #add jupyter
 # WORKDIR /supervised/notebooks/
 # few inits
-RUN RUN pip install --upgrade pip
+RUN pip install --upgrade pip
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
 
 
