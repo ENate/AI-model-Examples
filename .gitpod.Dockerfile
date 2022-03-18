@@ -12,7 +12,7 @@ RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 
 # WORKDIR /supervised/notebooks/
 # few inits
 RUN pip install --upgrade pip
-RUN apt-get install -y protobuf-compiler python-pil python-lxml
+RUN sudo apt-get install -y protobuf-compiler python-pil python-lxml
 
 
 RUN pip install --no-cache-dir matplotlib pandas jupyter jupyterlab
