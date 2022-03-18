@@ -7,18 +7,16 @@ RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 
 
 # RUN mkdir -p /supervised/notebooks/
 
-RUN git clone https://github.com/tensorflow/models.git /supervised/notebooks
-
 
 #add jupyter
-WORKDIR /supervised/notebooks/
+# WORKDIR /supervised/notebooks/
 # few inits
 RUN RUN pip install --upgrade pip
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
 
 
 RUN pip install --no-cache-dir matplotlib pandas jupyter jupyterlab
-RUN protoc object_detection/protos/*.proto --python_out=.
+# RUN protoc object_detection/protos/*.proto --python_out=.
 
 EXPOSE 8888
 
