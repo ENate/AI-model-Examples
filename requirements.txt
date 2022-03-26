@@ -8,5 +8,3 @@ pytest==6.2.2
 numpy==1.22
 kafka-python==2.0.2
 python-dotenv==0.20.0
-tweety==0.1.6
-tweepy==4.8.0
