@@ -6,11 +6,12 @@ RUN  pip3 install --requirement /tmp/requirements.txt
 RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 pip3 install
 
 # Install helm and kubectl 
-
+# install tweepy and tweety 
+RUN pip install tweety && pip install tweepy
 
 #add jupyter
 # WORKDIR /supervised/notebooks/
-# few inits
+# few init
 RUN pip install --upgrade pip
 RUN sudo apt-get install -y protobuf-compiler python-pil python-lxml
 
