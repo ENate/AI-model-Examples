@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 # install miniconda
-RUN mkdir /home/gitpod/.conda
+RUN sudo mkdir /home/gitpod/.conda
 # Install conda
 
 
