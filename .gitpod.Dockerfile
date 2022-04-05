@@ -2,7 +2,8 @@ FROM gitpod/workspace-full
 # install miniconda
 RUN sudo mkdir /home/gitpod/.conda
 # Install conda
-RUN sudo mkdir /var/lib/pgadmin 
+RUN sudo mkdir /var/lib/pgadmin
+RUN sudo chmod -R 777 /var/lib/pgadmin
 RUN sudo mkdir /var/lib/pgadmin/session
 
 #Install Python Packages
