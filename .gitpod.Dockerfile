@@ -24,7 +24,7 @@ RUN sudo apt-get install -y protobuf-compiler python-pil python-lxml
 
 # Install tensorflow ranking and datasets
 RUN pip install -q tensorflow-ranking && pip install -q --upgrade tensorflow-datasets
-
+RUN pip install pip install --upgrade tensorflow-hub
 
 RUN pip install --no-cache-dir matplotlib pandas jupyter jupyterlab
 # RUN protoc object_detection/protos/*.proto --python_out=.
