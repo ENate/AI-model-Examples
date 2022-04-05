@@ -200,7 +200,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - /workspace/pgadmin-data:/var/lib/pgadmin
+      - /workspace/pgadmin-data:/var/lib/pgadmin4
       - /tmp:/tmp
       - /workspace:/workspace
     links:
