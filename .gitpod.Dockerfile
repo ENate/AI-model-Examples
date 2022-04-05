@@ -4,6 +4,7 @@ RUN sudo mkdir /home/gitpod/.conda
 # Install conda
 RUN sudo mkdir /var/lib/pgadmin
 RUN sudo chmod -R 777 /var/lib/pgadmin
+RUN sudo chown -R 5050:5050 /var/lib/pgadmin
 RUN sudo mkdir /var/lib/pgadmin/sessions
 
 #Install Python Packages
