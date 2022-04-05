@@ -8,4 +8,3 @@ The main parts of the repository is divided into supervised, unsupervised, reinf
 ## Learning repository
 
 - We distinguish three different learning repositories: the supervised, unsupervised and reinforcement learning repositories. In each case, we present recent code examples and explanations on how to apply different Machine Learning algorithms to solve several problems.
--------
