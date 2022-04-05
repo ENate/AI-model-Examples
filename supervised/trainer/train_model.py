@@ -16,8 +16,19 @@ from PIL import ImageFont
 from PIL import ImageOps
 
 
-def print_version():
-    print(tf.__version__)
+# displays image
+def display_image(image)
+    """Image to display
+    """
+    fig = plt.figure(figsize=(10, 20))
+    plt.grid(False)
+    plt.imshow(image)
+    
+# load and sized image
+def load_and_size_image(url, new_width=256, new_height=256, display=False):
+    _, filename = tempfile.mkstemp(suffix='.jpg')
+    
+    
     
 if __name__ == "__main__":
     print_version()
