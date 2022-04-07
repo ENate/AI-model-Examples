@@ -15,7 +15,9 @@ RUN cat /tmp/requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 
 # Install helm and kubectl 
 # install tweepy and tweety 
 RUN pip install tweety && pip install tweepy
-
+# install tensorflow io
+RUN pip install tensorflow-io
+RUN pip install kafka-python
 #add jupyter
 # WORKDIR /supervised/notebooks/
 # few init
