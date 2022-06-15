@@ -178,12 +178,13 @@ services:
   
   db:
     image: postgres
+    container_name: db
     restart: always
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: secret
-      PGDATA: /var/lib/postgresql/data
+      PGDATA: ~/var/lib/postgresql/data
     volumes:
       - /workspace/db-data:/var/lib/postgresql/data
     ports:
