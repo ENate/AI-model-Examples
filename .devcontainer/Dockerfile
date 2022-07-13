@@ -9,9 +9,9 @@ ARG NODE_VERSION="none"
 RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
-# COPY requirements.txt /tmp/pip-tmp/
-# RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-#    && rm -rf /tmp/pip-tmp
+COPY requirements.txt /tmp/pip-tmp/
+RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
+    && rm -rf /tmp/pip-tmp
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
@@ -19,3 +19,12 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
+RUN pip install -q tensorflow-ranking && pip install -q --upgrade tensorflow-datasets
+RUN pip install pip install --upgrade tensorflow-hub
+
+RUN pip install --no-cache-dir matplotlib pandas jupyter jupyterlab
+# RUN protoc object_detection/protos/*.proto --python_out=.
+
+EXPOSE 8888
+
+ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root"]

@@ -8,3 +8,9 @@ pytest==6.2.2
 numpy==1.22
 kafka-python==2.0.2
 python-dotenv==0.20.0
+Pillow
+tensorflow-hub
+tensorflow-datasets
+tweepy
+tweety
+matplotlib
