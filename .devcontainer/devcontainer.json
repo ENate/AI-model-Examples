@@ -67,7 +67,8 @@
 				"ms-python.vscode-pylance",
 				"ms-python.python",
 				"pivotal.vscode-boot-dev-pack",
-				"davidanson.vscode-markdownlint"
+				"davidanson.vscode-markdownlint",
+				"mechatroner.rainbow-csv"
 			]
 		}
 	},
