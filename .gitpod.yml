@@ -14,3 +14,38 @@ tasks:
 ports:
   - port: 3000
     onOpen: open-preview
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.vscode-pylance
+    - vscjava.vscode-java-pack
+    - formulahendry.vscode-mysql
+    - cweijan.vscode-mysql-client2
+    - Pivotal.vscode-boot-dev-pack
+    - vscjava.vscode-lombok
+    - eamodio.gitlens
+    - felipecaputo.git-project-manager
+    - dbaeumer.vscode-eslint
+    - ms-vscode.cpptools-extension-pack
+    - evondev.indent-rainbow-palettes
+    - donjayamanne.git-extension-pack
+    - esbenp.prettier-vscode
+    - redhat.vscode-xml
+    - rangav.vscode-thunder-client
+    - developersoapbox.vscode-springboot-developer-pack
+    - ms-azuretools.vscode-dapr
+    - bierner.markdown-preview-github-styles
+    - oderwat.indent-rainbow
+    - mongodb.mongodb-vscode
+    - 2gua.rainbow-brackets
+    - dzhavat.bracket-pair-toggler
+    - IBM.output-colorizer
+    - GitHub.vscode-pull-request-github
+    - cweijan.git-graph-history
+    - mhutchie.git-graph
+    - ms-python.vscode-pylance
+    - ms-python.python
+    - pivotal.vscode-boot-dev-pack
+    - davidanson.vscode-markdownlint
+    - mechatroner.rainbow-csv
+    - ms-azuretools.vscode-docker
