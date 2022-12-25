@@ -1,4 +1,5 @@
 FROM gitpod/workspace-full
+
 # install miniconda
 RUN sudo mkdir /home/gitpod/.conda
 # Install conda
@@ -37,3 +38,9 @@ ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root"]
 # Install tensorflow probability
 # RUN pip install jaxlib
 # install other useful components
+RUN mkdir -p ~/miniconda3
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+RUN bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+RUN rm -rf ~/miniconda3/miniconda.sh
+RUN ~/miniconda3/bin/conda init bash
+RUN ~/miniconda3/bin/conda init zsh

@@ -17,6 +17,7 @@ ports:
 vscode:
   extensions:
     - ms-python.python
+    - donjayamanne.python-environment-manager
     - ms-python.vscode-pylance
     - vscjava.vscode-java-pack
     - formulahendry.vscode-mysql
