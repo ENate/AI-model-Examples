@@ -1,6 +1,7 @@
 # local package
 -e .
-
+jax
+flax
 # external requirements
 click
 Sphinx
