@@ -26,6 +26,7 @@ RUN pip install --upgrade pip
 RUN sudo apt-get install -y protobuf-compiler python-pil python-lxml
 
 # Install tensorflow ranking and datasets
+RUN pip install tensorflow
 RUN pip install -q tensorflow-ranking && pip install -q --upgrade tensorflow-datasets
 RUN pip install pip install --upgrade tensorflow-hub
 

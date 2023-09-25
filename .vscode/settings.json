@@ -2,24 +2,7 @@
     "editor.fontFamily": "'Droid Sans Mono', 'monospace'",
     "terminal.integrated.letterSpacing": 1,
     "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#64d25b",
-        "activityBar.activeBorder": "#0e321f",
-        "activityBar.background": "#64d25b",
-        "activityBar.foreground": "#15202b",
-        "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#6971d6",
-        "activityBarBadge.foreground": "#e7e7e7",
-        "sash.hoverBorder": "#64d25b",
-        "statusBar.background": "#41c436",
-        "statusBar.foreground": "#15202b",
-        "statusBarItem.hoverBackground": "#349c2b",
-        "statusBarItem.remoteBackground": "#41c436",
-        "statusBarItem.remoteForeground": "#15202b",
-        "titleBar.activeBackground": "#41c436",
-        "titleBar.activeForeground": "#15202b",
-        "titleBar.inactiveBackground": "#41c43699",
-        "titleBar.inactiveForeground": "#15202b99",
-        "commandCenter.border": "#15202b99"
+        "activityBar.activeBorder": "#0e321f"
     },
     "peacock.remoteColor": "#41c436"
 }
