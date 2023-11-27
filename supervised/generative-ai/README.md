@@ -1,7 +1,7 @@
 ### Generative Adversarial Networks (GANS)
 
 ### Introduction
-This supervised deep learning method is based on a generator feed forward neural network and a distributor. Formulated on ideas linked to game theory, it is meant to present to competing networks which will output a given probability using information derived from the data set.
+The examples presented in this forlder represent generative models -- which are  deep learning methods based on a generator feed forward neural network and a distributor. Formulated on ideas linked to game theory, it is meant to present to competing networks which will output a given probability using information derived from the data set.
 
 ### Features of GANs
 - Two competing agents whose objectives is to work for opossing goals.
