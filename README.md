@@ -72,3 +72,6 @@ we will present the links to the papers, tutorials and other forms of publicatio
 - A python program implemented to study the simulation of a molecule in the nucleus of an atom.
 
 ## Structure of the repository
+- Model training folders and source files: supervised, unsupervised, quantum
+- docker: docker files to build infrastructure and services
+- infra: for observability tools and services
