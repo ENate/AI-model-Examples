@@ -10,7 +10,7 @@ The training environments will be based on using the most popular technology sta
 - Pytorch
 - TensorFlow
 - FLAX - flexible API and built on JAX
-- Python AI tools, frameworks and libraries
+- More popular AI tools, frameworks and libraries
 - Java, C++ will be used where necessary.
 
 Besides, we list the infrastructural tools for Machine Learning security, monitory and deployment next. 
