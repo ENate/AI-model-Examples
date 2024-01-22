@@ -23,6 +23,9 @@ Besides, we list the infrastructural tools for Machine Learning security, monito
 - Postgres
 - Kafka
 - RabbitMQ
+- MySQL
+- docker
+- kubernetes (later)
 
 - Observability ([as discussed here](https://grafana.com/grafana/dashboards/16110-fastapi-observability/)
 ) using Grafana, Tempo, Loki and Prometheus
