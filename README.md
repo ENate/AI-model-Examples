@@ -19,24 +19,24 @@ In order to begin training or fine-tuning any model, we must prepare the trainin
 Besides, we list the infrastructural tools for Machine Learning security, monitory and deployment next. 
 
 ### More Optional Tools for development
-- TFX
-- Postgres
-- Kafka
-- RabbitMQ
+- TFX is an end-to-end platform for deploying ML in production [and available here.](https://www.tensorflow.org/tfx)
+- Postgres is an open source database engine [available here.](https://www.postgresql.org/)
+- Kafka is a distributed event streaming platform [available here.](https://kafka.apache.org/)
+- RabbitMQ is a widely available message broker [which can be installed from here.](https://rabbitmq.com/)
 - MySQL
-- docker
+- docker (and compose) to containerize applications to share, verify and run everywhere [can be installed from here.](https://www.docker.com/)
 - kubernetes (later)
 - Observability ([as discussed here](https://grafana.com/grafana/dashboards/16110-fastapi-observability/)
 ) using Grafana, Tempo, Loki and Prometheus
 
 ### Orchestration
-- Airflow
-- Prefect
-- Mage
+- Airflow is available [on this link](https://airflow.apache.org/)
+- Prefect can be installed [from this link.](https://www.prefect.io/)
+- Mage offers a more focus on AI [and is available here](https://www.mage.ai/)
 
 ### Monitoring/DevOps
-- Mlflow
-- Minio
+- Mlflow can be installed from [this link](https://mlflow.org/)
+- Minio is an open source s3 bucket for AI/ML and is available[on this link.](https://min.io/)
 
 ### Contents
 
@@ -83,3 +83,11 @@ we will present the links to the papers, tutorials and other forms of publicatio
 - Model training folders and source files: supervised, unsupervised, quantum
 - docker: docker files to build infrastructure and services
 - infra: for observability tools and services
+
+
+## Other Resources I like:
+- Gitpod is a ready-to-code environment [is available here.](https://www.gitpod.io/)
+- Lighting AI platform (Still experimenting and reading their offers) [is available here](https://lightning.ai/).
+- Render offers you the opportunity to deploy applications [and is available here.](https://render.com/)
+
+More content to be included soon - please stay tuned :) 
