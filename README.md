@@ -1,34 +1,42 @@
 ### Introduction
 
-We present guides on how to prepare training environments, train and apply machine learning models to problems in different settings. 
-The training environments will be based on using the most popular technology stacks. Also, the technology stack used in these is based on personal choice and do not focus on their overall performance abilities. However, emphasis will be laid on cases where performace will affet training and implementation of the examples. In relation to this, our natural choice of tools and frameworks will impliitly be  is not a recommended where necessary. Besides performane, I will also select a number of examples based on convenience. In specific cases, I will mention why using a particular tool may be suitable in a given scenario. For now, I will begin by listing the main tools and discuss the training methods and appliation of the resulting models.
+The guides presented here contain examples, tutorials, tools and frameworks on how to prepare training environments, train and apply machine learning (ML) models to problems in various settings. 
+The training environments and selected tools will be based on popularity and personal choice with focus on their overall performance. Emphasis will also be laid on examples where performace will affect model training and implementation. Though my aim is not to recommend any particular tools and frameworks but I am hopeful that you may gain from my personal experience in using these tools. Besides, I will also select a number of ML model examples which are mostly suited to my use cases. Specifically, I will mention why using a particular tool may be suitable in a given scenario. Next, I will begin by listing the main tools and discuss the training methods and application of the ML models o interest.
 
-## Technology Stack
+## Preparing the Training Environment 
+In order to begin training or fine-tuning any model, we must prepare the training environment. This is necessary in order to facilitate training  and manage different Python versions. This also provides a virtual representation of the libraries and enables us to effectively manage tools and frameworks. It also helps us to prevent potential issues that may arise with using incompatible tools or frameworks which may affect the operating system.
 
-  The tech stack used in model training involves (not restricted to) the following
+### Technology Stack
 
-- Pytorch
-- TensorFlow
-- FLAX - flexible API and built on JAX
-- More popular AI tools, frameworks and libraries
+  The following technology stack listed below will be used in the folders. I will continue to add to this list on a rolling basis as the need arise. In order to run the examples presented in this repository, I will be using the following:
+- Python 3.9+ is available ([by clicking here.](https://www.python.org/))
+- Pytorch can be [found here](https://pytorch.org/) 
+- TensorFlow can be [found on this link](https://www.tensorflow.org/)
+- FLAX is a flexible API and built on JAX [is available.](https://github.com/google/flax)
+- More popular AI models, tools, frameworks and libraries are available on [Huggingface](https://huggingface.co/)
 - Java, C++ will be used where necessary.
 
 Besides, we list the infrastructural tools for Machine Learning security, monitory and deployment next. 
 
-### Infrastructural tools
-
-- Apache Airflow
-- MLFLOW
-- TFX (with Apache Airflow for orchestration)
+### More Optional Tools for development
+- TFX
 - Postgres
 - Kafka
 - RabbitMQ
 - MySQL
 - docker
 - kubernetes (later)
-
 - Observability ([as discussed here](https://grafana.com/grafana/dashboards/16110-fastapi-observability/)
 ) using Grafana, Tempo, Loki and Prometheus
+
+### Orchestration
+- Airflow
+- Prefect
+- Mage
+
+### Monitoring/DevOps
+- Mlflow
+- Minio
 
 ### Contents
 
