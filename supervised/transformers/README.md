@@ -2,7 +2,7 @@
 
 -----------------------------------------------
 
-We discuss transformer architectures and their applications to various machine learning problems. To begin, we highlight the 
+We discuss transformer architectures and their applications to various machine learning problems. To begin, we highlight 
 the limitation of prior training models which were inefficient to deal with a 
 number of issues associated with Machine Translation, Document and Text Mining, Computer Vision 
 and other Natural Language Processing tasks. Next, we identify the main contribution of transformer
@@ -20,7 +20,7 @@ the following steps will be discussed
 ### Tools and Tech Stack
 
 - Python 3.10+
-- Observation via Grafana (UI), Loki(logs), tempo(traces) and Prometheus (metrics).s
+- Observation via Grafana (UI), Loki for logs, tempo(traces) and Prometheus (metrics).
 - Pytorch (for some examples)
 - Examples implemented using mlflow for monitoring and used in training pipelines.
 - TensorFlow - a library from training machine learning models
