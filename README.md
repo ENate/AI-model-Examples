@@ -1,6 +1,6 @@
 ### Introduction
 
-The guides presented here contain examples, tutorials, tools and frameworks on how to prepare training environments, train and apply machine learning (ML) models to problems in various settings. 
+This repository contains examples, tutorials, tools and frameworks on how to prepare training environments, train and apply machine learning (ML) models to problems in various settings. 
 The training environments and selected tools will be based on popularity and personal choice with focus on their overall performance. Emphasis will also be laid on examples where performace will affect model training and implementation. Though my aim is not to recommend any particular tools and frameworks but I am hopeful that you may gain from my personal experience in using these tools. Besides, I will also select a number of ML model examples which are mostly suited to my use cases. Specifically, I will mention why using a particular tool may be suitable in a given scenario. Next, I will begin by listing the main tools and discuss the training methods and application of the ML models o interest.
 
 ## Preparing the Training Environment 
@@ -23,8 +23,8 @@ Besides, we list the infrastructural tools for Machine Learning security, monito
 - Postgres is an open source database engine [available here.](https://www.postgresql.org/)
 - Kafka is a distributed event streaming platform [available here.](https://kafka.apache.org/)
 - RabbitMQ is a widely available message broker [which can be installed from here.](https://rabbitmq.com/)
-- MySQL
-- docker (and compose) to containerize applications to share, verify and run everywhere [can be installed from here.](https://www.docker.com/)
+- MySQL 
+- docker (and compose) is used to containerize applications to share, verify and run everywhere [can be installed from here.](https://www.docker.com/)
 - kubernetes (later)
 - Observability ([as discussed here](https://grafana.com/grafana/dashboards/16110-fastapi-observability/)
 ) using Grafana, Tempo, Loki and Prometheus
