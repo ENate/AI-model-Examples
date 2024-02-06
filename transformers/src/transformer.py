@@ -1,23 +1,20 @@
+"""A base transformer model"""
 import random
 import unittest
+from typing import Optional
+
 import numpy as np
 import torch
 from torch import nn
 from torch.nn.init import xavier_uniform_
-from typing import Optional
-from utils import construct_future_mask
+
+from .vocabulary import Vocabulary
 from encoder import TransformerEncoder
 from .decoder import TransformerDecoder
 from utils import construct_future_mask
-from .vocabulary import Vocabulary
 
 
 class Transformer(nn.Module):
-    """Main transformer
-
-    Args:
-        nn (_type_): Neural network package from pytorch
-    """
     def __init__(
         self,
         hidden_dim: int,
@@ -33,7 +30,7 @@ class Transformer(nn.Module):
     ):
         super().__init__()
         # Because the encoder embedding, and decoder embedding and
-        # decoder pre-softmax transformation share embeddings
+        # decoder pre-softmax transformeation share embeddings
         # weights, initialize one here and pass it on.
         self.embed = nn.Embedding(
             vocab_size, hidden_dim,
@@ -65,7 +62,14 @@ class Transformer(nn.Module):
 
 
 class TestTransformer(unittest.TestCase):
+    """Test case for transformer
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_transformer_inference(self):
+        """A test transformer inference
+        """
         seed = 0
         torch.manual_seed(seed)
         random.seed(seed)
