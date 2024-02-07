@@ -13,10 +13,23 @@ steps associated with applying them in deep learning.  In order to follow this t
 the following steps will be discussed
 
 ### Main Items
+We highlight the main items covered in this folder. First, I will present a summary on how to build 
+a transformer from scratch. Using some of the tutorials and tools that are available, I also use some code examples
+without a deep dive into the implementations. My goal is to give you more control over your desire to study the transformer architecture.
+I also feel that by studying using these explanations (mine included :)), you can pick up more ideas from these numerous sources.
+To begin, we will cover the following topics:
 - Discuss Attention Mechanism in Transformers
 - Building the transformer architecture from Scratch
 - Discussing the main points to consider when training a transformer model
 - Pre-training Transformer Models including Tools and Frameworks
+
+### Implementation Steps
+- Initial text pre-processing
+- Embedding preprocessed text
+- Pass text to encoder
+- Decode text
+- Pass to encoder-Decoder Attention
+- Training and Output Analysis
 
 ### Tools and Tech Stack Required in This Folder
 
