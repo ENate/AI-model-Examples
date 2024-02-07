@@ -4,7 +4,7 @@ from typing import List, Optional
 
 
 class Vocabulary:
-    """Generates a list of tokens from imput string """
+    """Generates a list of tokens from input string """
     BOS = "BOS"
     EOS = "EOS"
     PAD = "PAD"
@@ -12,7 +12,7 @@ class Vocabulary:
     def __init__(self, list_of_sentences: Optional[List[str]]) -> None:
         self.token2index = {self.BOS: 0, self.EOS: 1, self.PAD: 2}
         self.index2token = {v: k for k, v in self.token2index.items()}
-        # check whethere there is a list of sentences?
+        # check whether there is a list of sentences?
         if not list_of_sentences:
             # then return
             return
