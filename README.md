@@ -72,7 +72,7 @@ using the example from [this repo](https://github.com/blueswen/fastapi-observabi
 References will be made to progress in the different models implemented in the folders contained in this repository. For instance,
 we will present the links to the papers, tutorials and other forms of publications associated with the topics covered in this repository.
 
-### Contents of the misc_folders
+### Contents of the ```misc_folder```
 
 - contains deep neural network and epidemiological models (GUI written in python)
 - A Deep neural network architecture drawing file.
