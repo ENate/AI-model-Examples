@@ -8,7 +8,9 @@ In order to begin training or fine-tuning any model, we must prepare the trainin
 
 ### Technology Stack
 
-  The following technology stack listed below will be used in the folders. I will continue to add to this list on a rolling basis as the need arise. In order to run the examples presented in this repository, I will be using the following:
+  The following tech stack listed below will be used in the folders. 
+  I will continue to add to this list on a rolling basis as the need arise. 
+  In order to run the examples presented in this repository, I will be using the following tools and frameworks
 - Python 3.9+ is available ([by clicking here.](https://www.python.org/))
 - Pytorch can be [found here](https://pytorch.org/) 
 - TensorFlow can be [found on this link](https://www.tensorflow.org/)
@@ -72,22 +74,22 @@ using the example from [this repo](https://github.com/blueswen/fastapi-observabi
 References will be made to progress in the different models implemented in the folders contained in this repository. For instance,
 we will present the links to the papers, tutorials and other forms of publications associated with the topics covered in this repository.
 
-### Contents of the ```misc_folder```
+### Contents of the _misc_folder_
 
 - contains deep neural network and epidemiological models (GUI written in python)
 - A Deep neural network architecture drawing file.
 - Epidemiological models to study the `n=2` strain in a given population implemented in Python. The aim is to analyze the effect of `n=2` disease strains consisting of different variations. The problem solves the case for `n=2` disease strains affecting a given population, which was submitted in partial fulfillment of the award of the Postgraduate Diploma at the African Institute for Mathematical Sciences, Capetown, South Africa.
 - A python program implemented to study the simulation of a molecule in the nucleus of an atom.
 
-## Structure of the repository
+### Structure of the repo
 - Model training folders and source files: supervised, unsupervised, quantum
 - docker: docker files to build infrastructure and services
 - infra: for observability tools and services
 
 
-## Other Resources I like:
-- Gitpod is a ready-to-code environment [is available here.](https://www.gitpod.io/)
+### Other Resources I like:
+- Gitpod is a cloud based ready-to-code environment [can be downloaded from here.](https://www.gitpod.io/)
 - Lighting AI platform (Still experimenting and reading their offers) [is available here](https://lightning.ai/).
 - Render offers you the opportunity to deploy applications [and is available here.](https://render.com/)
 
-More content to be included soon - please stay tuned :) 
+More content to be included soon on a rolling basis - please stay tuned :) 
