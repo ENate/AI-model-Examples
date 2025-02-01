@@ -5,11 +5,12 @@ Interaction:
 	Button-2 + Drag : zoom
 	Button-3 + Drag : camera movement
 """
-from __future__ import division
-from vpython import (color, display, curve, sphere, label)  # http://www.vpython.org/webdoc/visual/
-from random import random
 import time
-
+import random
+from __future__ import division
+# http://www.vpython.org/webdoc/visual/
+from vpython import (color, window, curve, sphere)
+# from vpython import color, curve, sphere, label
 # gnts ================================================================
 WINDOW_TITLE = "Brownian Motion"
 WINDOW_WIDTH = 640 + 4 + 4
@@ -36,7 +37,7 @@ PARTICLES_COLORS = [
 SLEEP_SECONDS = 0.25  # seconds to delay among each simulation dt
 SAMPLING_RATE = 0.5  # dts to skip among each sampling
 
-sigma = 10
+SIGMA = 10
 # maximum displacement applied when computing the particles movement
 
 
@@ -51,13 +52,13 @@ window = display(
 
 # Axis X
 axisX = curve(
-    pos=[(-sigma, 0, 0), (sigma, 0, 0)], color=color.white, radius=CUBE_THICKNESS
+    pos=[(-SIGMA, 0, 0), (SIGMA, 0, 0)], color=color.white, radius=CUBE_THICKNESS
 )
 
 
 # Axis Y
 axisY = curve(
-    pos=[(0, -4 * sigma, 0), (0, 4 * sigma, 0)],
+    pos=[(0, -4 * SIGMA, 0), (0, 4 * SIGMA, 0)],
     color=color.white,
     radius=CUBE_THICKNESS,
 )
@@ -67,8 +68,8 @@ axisY = curve(
 particles = []
 streams = []
 
-min = 1.1 * PARTICLES_SIZE
-max = CUBE_SIZE - min
+MIN = 1.1 * PARTICLES_SIZE
+MAX = CUBE_SIZE - MIN
 
 # Particles: creation
 for i in range(PARTICLES_TOTAL):
@@ -97,9 +98,9 @@ while True:
         pos = particles[i].pos
 
         # Random walk
-        dS = sigma * (random.random() - 0.5)
+        dS = SIGMA * (random.random() - 0.5)
 
-        pos[0] = dt * sigma
+        pos[0] = dt * SIGMA
         pos[1] = pos[1] + dS
         pos[2] = 0
 
@@ -107,11 +108,11 @@ while True:
         streams[i].append(pos=pos)
         axisX.append(pos=(pos[0], 0, 0))
 
-        newThickness = CUBE_THICKNESS * (dt * SAMPLING_RATE) + 1
-        streams[i].radius = newThickness
-        axisX.radius = newThickness * 0.5
-        axisY.radius = newThickness * 0.5
-        particles[i].radius = newThickness * 2.0
+        NEW_THICKNESS = CUBE_THICKNESS * (dt * SAMPLING_RATE) + 1
+        streams[i].radius = NEW_THICKNESS
+        axisX.radius = NEW_THICKNESS * 0.5
+        axisY.radius = NEW_THICKNESS * 0.5
+        particles[i].radius = NEW_THICKNESS * 2.0
 
     time.sleep(SLEEP_SECONDS)
 

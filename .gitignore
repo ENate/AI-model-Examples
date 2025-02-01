@@ -2,3 +2,13 @@
 .vscode
 .idea
 AI_overview.drawio
+.conda
+.settings/
+.idea
+.vscode
+transformers/from_scratch/src/__pycache__
+transformers/from_scratch/decoder/src/__pycache__
+transformers/from_scratch/encoder/src/__pycache__
+transformers/from_scratch/encoder-decoder/src/__pycache__
+supervised/base-trainer/.ipynb_checkpoints
+.project

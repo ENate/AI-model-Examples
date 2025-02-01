@@ -3,7 +3,8 @@
 This repository contains examples, tutorials, tools and frameworks on how to prepare training environments, train and apply machine learning (ML) models to problems in various settings. 
 The training environments and selected tools will be based on popularity and personal choice with focus on their overall performance. Emphasis will also be laid on examples where performace will affect model training and implementation. Though my aim is not to recommend any particular tools and frameworks but I am hopeful that you may gain from my personal experience in using these tools. Besides, I will also select a number of ML model examples which are mostly suited to my use cases. Specifically, I will mention why using a particular tool may be suitable in a given scenario. Next, I will begin by listing the main tools and discuss the training methods and application of the ML models o interest.
 
-### Preparing the Training Environment 
+### Preparing the Training Environment
+
 In order to begin training or fine-tuning any model, we must prepare the training environment. This is necessary in order to facilitate training  and manage different Python versions. This also provides a virtual representation of the libraries and enables us to effectively manage tools and frameworks. It also helps us to prevent potential issues that may arise with using incompatible tools or frameworks which may affect the settings of your operating system.
 In python, I will usually download and install the latest stable Python version.
 

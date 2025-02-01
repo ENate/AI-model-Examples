@@ -1,8 +1,9 @@
-### Contents
+# Contents
 
 --------------------------
+In this folder, I present LLMs which are based on encoder models. The aim is to discuss examples which are suitable for problems with no labeled outputs. This implies that we categorize models based on inputs and associated learning methods.
 
-### Algorithms
+## Algorithms
   
 * Identify different data collection techniques
 * Data types, preparation and analysis.
